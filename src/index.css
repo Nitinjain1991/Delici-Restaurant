@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #222  !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: "CormorantGaramond";   /*Can be any text*/
+  src: 
+    url("./assests/fonts/CormorantGaramond-Regular.ttf") 
+}
+@font-face {
+  font-family: "opensans";   /*Can be any text*/
+  src: 
+    url("./assests/fonts/OpenSans-Regular.ttf") 
+}
+/* header */
+.header{
+  position: absolute;
+  z-index: 999999;
+}
+.button{
+  font-family: "opensans";
+  background-color: #e4c590;
+  border: 2px solid #e4c590;
+  color: #000;
+  padding: 15px 45px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.top-header-text{
+  font-family: "opensans" !important;
+  font-size: 13px;
+}
+.top-bar.border-bottom {
+  border-color: #f8f8f84d !important
+}
+/* end header */
+/* banner */
+
+h1{
+  font-family: "CormorantGaramond";
+  font-weight: 700 !important;
+  font-size: 70px  !important;
+  letter-spacing: 3px;
+}
+p{
+  font-family: "opensans";
+  font-size: 16px;
+  line-height: 27px  !important;
+}
+.smaill-yellow-title{
+  color: #e4c590;
+  font-size: 12px !important;
+  font-weight: 700px !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+} 
+.carousel-inner{
+  overflow: visible !important;
+}
+/* end banner */
+/* top notch section */
+.topnotch-main{
+  background-color: #0e0d0c;
+}
+h2{
+  font-family: "CormorantGaramond";
+  font-weight: 700 !important;
+  font-size: 40px  !important;
+  letter-spacing: 3px;
+}
+h5{
+  font-family: "CormorantGaramond";
+  font-size: 30px !important;
+}
+.text-btn{
+  font-family: "opensans";
+  color: #e4c590;
+  text-decoration: unset;
+  font-size: 12px !important;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+/* .container{
+  max-width: 1300px  !important;
+} */
+.topnotch-backimg{
+  bottom: 0;
+    content: "";
+    left: 50%;
+    margin-left: -70px;
+    position: absolute;
+    transition: all .5s ease;
+    width: 140px;
+    top: -25px;
+    z-index: -1;
+}
+/* .topnotch-card-img .image:before{
+  background-image: url(./assests/images/topnotch-backimg.png);
+  
+} */
+/* .image:after{
+  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.4));
+    content: "";
+    display: block;
+    height: 100%;
+    left: -85%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+    opacity: 0;
+    z-index: 1;
+}
+.main:hover .image:after {
+  -webkit-animation: shine 1s;
+  animation: shine 1s;
+  opacity: 1;
+} */
+/* end top notch section */
+/* about us */
+.about-second-img{
+  left: -40px;
+  bottom: -50px;
+}
+img.position-absolute.about-second-img:after{
+  content: "";
+  background-image: url('/src/assests/images/topnotch-backimg.png');
+}
+.book-a-call p{
+  font-family: "opensans";
+  font-size: 20px;
+}
+.book-a-call a{
+  color: #e4c590;
+  font-family: "opensans";
+  font-size:30px !important;
+  text-decoration: unset;
+}
+/* end about us */
+
+/* our menu */
+.our-menu{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.menu-tab-main{
+  gap: 40px;
+  border: unset;
+  border-top: 1px solid #f8f8f847 !important;
+  border-bottom: 1px solid #f8f8f847 !important;
+}
+.menu-link{
+  font-family: "CormorantGaramond";
+  letter-spacing: 2px;
+  font-size: 20px !important;
+  padding: 0px !important;
+  border: unset !important;
+}
+.menu-link.active,.menu-link:hover {
+  background: unset !IMPORTANT;
+  border: unset !important;
+  border-bottom: 1px double #e4c590 !important;
+  outline: unset  !important;
+}
+.menu-name{
+  font-family: "CormorantGaramond";
+  font-size: 21px !important;
+  letter-spacing: 2px;
+}
+.menu-desc{
+  font-family: "opensans";
+  color: #a7a7a7;
+  font-size: 16px;
+}
+.menuprice{
+  font-family: "opensans";
+  color: #e4c590;
+  font-size: 18px;
+}
+.menu-left-col{
+  border-right: 1px solid #f8f8f847;
+}
+.testimonial-section{
+  padding-top: 300px;
+    text-align: center;
+    padding-bottom: 400px;
+}
+.testimonial-text{
+  max-width: 900px;
+    margin: 0 auto;
+    line-height: 58px;
+    font-size: 50px !important;
+}
+.testimonial-section .carousel-indicators{
+  top:135%;
+}
+.quotes{
+  font-size: 70px;
+  line-height: .7em;
+}
+.menu h5, .menu p{margin-left:1rem;}
+/* end our menu */
+/* online reservation */
+.online-reservation{
+  background-color: #0e0d0c;
+  max-width: 1200px;
+  margin-top: -160px;
+}
+.reservation-form-col{
+  padding: 60px;
+}
+.online-reservation input,.online-reservation textarea {
+  background: #1a1b1c !important;
+  height: 56px;
+  border-radius: 0px !important;
+  outline: unset !important;
+  border: unset !important;
+}
+.online-reservation textarea {
+  height: 150px;
+}
+.reservation-right-col{
+  padding: 60px 30px;
+}
+.reservation-btn{
+  font-family: "opensans";
+  background-color: #e4c590;
+  border: 2px solid #e4c590;
+  color: #000;
+  padding: 15px 45px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+/* Contact us section */
+.info h4{
+  font-size: 16px;
+  font-weight: 700;
+}
+.info p{
+  font-size: 14px;
+}
+/* end contact us section */
+
+/* end online reservation */
+
+/* Footer section */
+footer{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/assests/images/foot-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer h4{
+  font-family: "CormorantGaramond";
+  font-weight: 600;
+}
+footer div a, footer h4{
+  color: #fff !important;
+}
+footer div a{
+  font-family: "opensans";
+  text-decoration: none;
+}
+footer .address a{margin-left:0.4rem}
+footer .address .location a{margin-left:0rem}
+footer .address .loc{margin-right:0.4rem;}
+footer div a:hover{
+  color:#e4c590 !important;
+}
+footer .links{
+  padding:80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{margin-bottom: 0.2rem;font-size:15px;}
+.foot-logo{
+  border: 1px solid hsla(0,0%,100%,.15);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+.foot-logo p{
+  font-family: "opensans";
+  margin-top:0.5rem;
+  
+}
+.foot-logo img{margin-bottom:1.5rem}
+.foot-logo a{
+  border: 1px solid #e4c590;
+  border-radius: 50%;
+  padding:2px 7px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.address p{
+  color:#e4c590;
+}
+/* end of footer section */
+
+@media(max-width:1200px) {
+  .OurStory .about-first-img{width:100%;}
+  .carousel-inner .banner-img{height:650px}
+}
+@media(max-width:991px) {
+  .carousel-inner .banner-img{height:750px}
+  .about-second-img{left:0}
+  .about-first-img {margin-top: 3rem;}
+  .topnotch-main .main{display:none;}
+  .topnotch-main .my-auto{margin-top:3rem !important;}
+  .menu h5, .menu p {margin-left: 0rem;}
+  .menu h5 {margin-top: 1rem;}
+  .carousel-caption h1 br{display:none;}
+  /* .address{text-align:center} */
+}
+@media(max-width:767px){
+  .button{padding: 12px 15px;}
+  .header .justify-content-end {justify-content: flex-start !important;}
+  .menu {
+    text-align: center;
+    margin-top: 3rem;  }
+    .menu-left-col{border-right:0;}
+}
+@media(max-width:540px){
+  .carousel-caption h1,
+  .topnotch-main h2,
+  .OurStory h2,
+  .our-menu h2,
+  .reservation-form-col h1,
+  .testimonial-section h2,
+  .reservation-right-col h2{font-size: 34px !important;}
+  .carousel-inner .banner-img {height: 650px;}
+}
